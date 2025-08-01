@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="main2.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">YourLogo</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+      <h2 class="typing"></h2>
+      <p>I'm a passionate <b>Web Developer</b> crafting beautiful and functional websites.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <div class="hero-img">
+           <img src="C:\Users\ASUS\OneDrive\Pictures\Screenshots\Screenshot 2025-07-31 200424.png"" alt="insert image">
+      </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Enthusiastic developer with experience in front-end and back-end technologies. I love turning ideas into reality using code and design.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <!-- Projects will be populated by JavaScript -->
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modal-img" src="" alt="Project Image" />
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <a id="modal-link" href="#" target="_blank" class="btn-outline">View </a>
+    </div>
+  </div>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <span id="formStatus"></span>
+  </section>
+
+  <footer>
+    <span>&copy; 2025 Your Name. All rights reserved.</span>
+  </footer>
+
+  <script src="main3.js"></script>
+</body>
+</html>
